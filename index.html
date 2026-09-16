@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUCI KINCLONG - Jasa Cuci Motor Profesional & Detailing Jati Agung</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0284c7', // Sky 600
+                        dark: '#0f172a',    // Slate 900
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white shadow-lg shadow-primary/30">
+                        <i class="fa-solid fa-motorcycle text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-extrabold text-slate-900 tracking-tight">CUCI <span class="text-primary">KINCLONG</span></span>
+                </div>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
+                    <a href="#services" class="hover:text-primary transition-colors">Layanan & Harga</a>
+                    <a href="#why-us" class="hover:text-primary transition-colors">Keunggulan</a>
+                    <a href="#booking" class="hover:text-primary transition-colors">Booking Online</a>
+                    <a href="#contact" class="hover:text-primary transition-colors">Kontak</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="hidden md:flex items-center">
+                    <a href="#booking" class="bg-primary hover:bg-sky-700 text-white font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-primary/30 transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-calendar-check mr-2"></i>Pesan Sekarang
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-slate-700 hover:text-primary focus:outline-none p-2 rounded-lg">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="#services" class="block py-2 text-slate-700 font-medium hover:text-primary">Layanan & Harga</a>
+            <a href="#why-us" class="block py-2 text-slate-700 font-medium hover:text-primary">Keunggulan</a>
+            <a href="#booking" class="block py-2 text-slate-700 font-medium hover:text-primary">Booking Online</a>
+            <a href="#contact" class="block py-2 text-slate-700 font-medium hover:text-primary">Kontak</a>
+            <div class="pt-2">
+                <a href="#booking" class="block text-center w-full bg-primary text-white font-semibold py-3 rounded-xl shadow-md">Pesan Sekarang</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <section class="relative bg-dark text-white overflow-hidden py-24 lg:py-32">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0 opacity-40">
+                <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=1600&auto=format&fit=crop" alt="Motorcycle Wash Background" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-dark via-dark/90 to-transparent z-0"></div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <span class="inline-flex items-center space-x-2 bg-primary/20 border border-primary/40 text-sky-400 px-4 py-1.5 rounded-full text-sm font-semibold backdrop-blur-sm">
+                            <i class="fa-solid fa-sparkles"></i>
+                            <span>Jasa Cuci Motor No. 1 di Jati Agung, Lampung Selatan</span>
+                        </span>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                            Kilau Sempurna, <br><span class="text-primary">Motor Seperti Baru Lagi</span>
+                        </h1>
+                        <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0">
+                            Layanan cuci motor profesional di Jati Agung menggunakan shampo premium pH balanced, snow wash salju melimpah, dan proses detailing teliti bebas baret.
+                        </p>
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
+                            <a href="#booking" class="w-full sm:w-auto bg-primary hover:bg-sky-700 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-primary/40 transition-all transform hover:-translate-y-1 text-center">
+                                <i class="fa-solid fa-calendar-days mr-2"></i>Booking Jadwal Cuci
+                            </a>
+                            <a href="#services" class="w-full sm:w-auto bg-slate-800/80 hover:bg-slate-800 border border-slate-700 text-white font-semibold px-8 py-4 rounded-xl transition-all text-center backdrop-blur-sm">
+                                Lihat Daftar Harga
+                            </a>
+                        </div>
+                        <!-- Quick Stats -->
+                        <div class="pt-8 border-t border-slate-800/80">
+                            <div>
+                                <p class="text-3xl font-extrabold text-primary">100%</p>
+                                <p class="text-xs text-slate-400 mt-1">Aman & Terpercaya</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hero Badge Card -->
+                    <div class="lg:col-span-5 hidden lg:block">
+                        <div class="bg-slate-900/80 border border-slate-800 p-8 rounded-3xl backdrop-blur-md shadow-2xl relative">
+                            <div class="absolute -top-4 -right-4 bg-primary text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
+                                PROMO HARI INI
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4">Paket Hemat Jati Agung</h3>
+                            <p class="text-slate-400 mb-6 text-sm">Cuci 3x gratis 1x poles body khusus untuk semua jenis motor matic & sport.</p>
+                            <ul class="space-y-3 mb-8 text-sm text-slate-300">
+                                <li class="flex items-center"><i class="fa-solid fa-check text-primary mr-3"></i> Free Semir Ban & Blok Mesin</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-primary mr-3"></i> Pembersihan Kerak Ringan</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-primary mr-3"></i> Ruang Tunggu Ber-AC & Wi-Fi</li>
+                            </ul>
+                            <a href="#booking" class="block text-center bg-white hover:bg-slate-100 text-dark font-bold py-3.5 rounded-xl transition-colors">
+                                Ambil Promo Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-sm font-bold tracking-widest text-primary uppercase mb-3">Layanan Kami</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Pilihan Paket Cuci & Perawatan Motor</p>
+                    <p class="text-slate-600 mt-4">Sesuaikan dengan kebutuhan kuda besi Anda, dikerjakan oleh tenaga ahli berpengalaman di Jati Agung, Lampung Selatan.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                        <div>
+                            <div class="w-14 h-14 bg-sky-100 text-primary rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-soap"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-2">Cuci Standar (Snow)</h3>
+                            <p class="text-slate-600 text-sm mb-6">Pencucian kilat menyeluruh dengan busa salju lembut yang aman untuk cat motor.</p>
+                            <ul class="space-y-3 text-sm text-slate-700 mb-8">
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Snow Wash Salju Melimpah</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Bilas Air Bertekanan</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Pengeringan Microfiber</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Semir Ban Berkilau</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="flex items-baseline justify-between mb-6">
+                                <span class="text-xs font-bold text-slate-400 uppercase">Mulai Dari</span>
+                                <span class="text-3xl font-extrabold text-slate-900">Rp 25.000</span>
+                            </div>
+                            <a href="#booking" class="block text-center bg-slate-900 hover:bg-primary text-white font-semibold py-3 rounded-xl transition-colors">
+                                Pilih Paket
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 (Featured) -->
+                    <div class="bg-dark text-white border-2 border-primary rounded-3xl p-8 shadow-2xl relative flex flex-col justify-between transform md:-translate-y-4">
+                        <div class="absolute -top-4 right-8 bg-primary text-white text-xs font-extrabold px-4 py-1.5 rounded-full shadow-md uppercase tracking-wider">
+                            Paling Populer
+                        </div>
+                        <div>
+                            <div class="w-14 h-14 bg-primary text-white rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 shadow-lg shadow-primary/40">
+                                <i class="fa-solid fa-spray-can-sparkles"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-2">Cuci Premium + Wax</h3>
+                            <p class="text-slate-300 text-sm mb-6">Perawatan lengkap termasuk pembersihan mesin ringan dan perlindungan cat dengan wax.</p>
+                            <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                                <li class="flex items-center"><i class="fa-solid fa-check text-primary mr-3"></i> Semua Fitur Cuci Standar</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-primary mr-3"></i> Pembersihan Blok Mesin</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-primary mr-3"></i> Body Waxing (Anti UV)</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-primary mr-3"></i> Penghilang Jamur Kaca/Body</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="flex items-baseline justify-between mb-6">
+                                <span class="text-xs font-bold text-slate-400 uppercase">Mulai Dari</span>
+                                <span class="text-3xl font-extrabold text-primary">Rp 50.000</span>
+                            </div>
+                            <a href="#booking" class="block text-center bg-primary hover:bg-sky-700 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-primary/30 transition-all">
+                                Pilih Paket
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                        <div>
+                            <div class="w-14 h-14 bg-sky-100 text-primary rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-gem"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-2">Full Detailing & Coating</h3>
+                            <p class="text-slate-600 text-sm mb-6">Restorasi total mengembalikan kilau motor seperti baru keluar dari dealer.</p>
+                            <ul class="space-y-3 text-sm text-slate-700 mb-8">
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Detailing Rinci Seluruh Bagian</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Pembersihan Karat & Kerak</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Nano Ceramic Coating 9H</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Garansi Kilau 6 Bulan</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="flex items-baseline justify-between mb-6">
+                                <span class="text-xs font-bold text-slate-400 uppercase">Mulai Dari</span>
+                                <span class="text-3xl font-extrabold text-slate-900">Rp 150.000</span>
+                            </div>
+                            <a href="#booking" class="block text-center bg-slate-900 hover:bg-primary text-white font-semibold py-3 rounded-xl transition-colors">
+                                Pilih Paket
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-us" class="py-24 bg-slate-100 border-y border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-sm font-bold tracking-widest text-primary uppercase mb-3">Kenapa CUCI KINCLONG?</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Standar Servis Terbaik untuk Motor Kesayangan</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                        <div class="w-12 h-12 bg-sky-100 text-primary rounded-xl flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900">Aman Anti Lecet</h4>
+                        <p class="text-slate-600 text-sm">Menggunakan kain microfiber bersih dan teknik cuci yang teruji aman untuk body motor berstriping maupun matte.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                        <div class="w-12 h-12 bg-sky-100 text-primary rounded-xl flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-flask"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900">Shampo pH Balanced</h4>
+                        <p class="text-slate-600 text-sm">Formula khusus yang tidak merusak warna cat asli dan tidak membuat komponen logam cepat berkarat.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                        <div class="w-12 h-12 bg-sky-100 text-primary rounded-xl flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900">Ruang Tunggu Nyaman</h4>
+                        <p class="text-slate-600 text-sm">Nikmati kopi/teh gratis, koneksi Wi-Fi super cepat, dan AC sejuk selagi motor Anda dibersihkan.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                        <div class="w-12 h-12 bg-sky-100 text-primary rounded-xl flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900">Pengerjaan Teliti</h4>
+                        <p class="text-slate-600 text-sm">Setiap sudut tersembunyi mulai dari kolong mesin hingga velg dibersihkan maksimal oleh tim profesional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="py-24 bg-white relative">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-dark text-white rounded-3xl p-8 sm:p-12 shadow-2xl border border-slate-800">
+                    <div class="text-center max-w-2xl mx-auto mb-12">
+                        <span class="text-primary font-bold uppercase tracking-widest text-xs bg-primary/20 px-3 py-1 rounded-full">Reservasi Online</span>
+                        <h2 class="text-3xl font-extrabold mt-3">Booking Jadwal Cuci Motor</h2>
+                        <p class="text-slate-400 text-sm mt-2">Hindari antrean panjang dengan memesan jadwal cuci motor Anda sekarang di Jati Agung.</p>
+                    </div>
+
+                    <form id="booking-form" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-2">Nama Lengkap</label>
+                                <input type="text" id="name" required placeholder="Contoh: Budi Santoso" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-primary">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-2">Nomor WhatsApp</label>
+                                <input type="tel" id="phone" required placeholder="Contoh: 081234567890" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-primary">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-2">Jenis Motor & Merek</label>
+                                <input type="text" id="motor" required placeholder="Contoh: Honda PCX / Yamaha NMAX" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-primary">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-2">Pilih Layanan</label>
+                                <select id="service" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary">
+                                    <option value="" disabled selected>-- Pilih Paket Cuci --</option>
+                                    <option value="Cuci Standar (Snow) - Rp 25.000">Cuci Standar (Snow) - Rp 25.000</option>
+                                    <option value="Cuci Premium + Wax - Rp 50.000">Cuci Premium + Wax - Rp 50.000</option>
+                                    <option value="Full Detailing & Coating - Rp 150.000">Full Detailing & Coating - Rp 150.000</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-2">Tanggal Kedatangan</label>
+                                <input type="date" id="date" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-2">Jam Kedatangan</label>
+                                <select id="time" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary">
+                                    <option value="" disabled selected>-- Pilih Jam --</option>
+                                    <option value="09:00 WIB">09:00 WIB</option>
+                                    <option value="10:30 WIB">10:30 WIB</option>
+                                    <option value="13:00 WIB">13:00 WIB</option>
+                                    <option value="15:00 WIB">15:00 WIB</option>
+                                    <option value="16:30 WIB">16:30 WIB</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="w-full bg-primary hover:bg-sky-600 text-white font-bold py-4 rounded-xl shadow-xl shadow-primary/30 transition-all text-center">
+                                <i class="fa-solid fa-paper-plane mr-2"></i>Kirim Booking Sekarang
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Success Notification Modal / Box (Hidden by default) -->
+                    <div id="success-box" class="hidden mt-8 bg-emerald-900/60 border border-emerald-500/50 p-6 rounded-2xl text-center space-y-3">
+                        <div class="w-12 h-12 bg-emerald-500 text-white rounded-full flex items-center justify-center text-xl mx-auto">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-emerald-200">Booking Berhasil Dibuat!</h4>
+                        <p id="success-msg" class="text-sm text-emerald-300"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 bg-white border-t border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <span class="text-primary font-bold uppercase tracking-widest text-xs bg-sky-100 px-3 py-1 rounded-full">Lokasi & Kontak</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Kunjungi Outlet Kami di Jati Agung</h2>
+                        <p class="text-slate-600">Punya pertanyaan seputar perawatan motor atau ingin konsultasi detailing? Hubungi atau kunjungi langsung workshop kami di wilayah Jati Agung.</p>
+                        
+                        <div class="space-y-4 pt-2">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-lg flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">Alamat Workshop</h4>
+                                    <p class="text-sm text-slate-600">Kec. Jati Agung, Kabupaten Lampung Selatan</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-lg flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">Jam Operasional</h4>
+                                    <p class="text-sm text-slate-600">Setiap Hari: 08.00 - 18.00 WIB</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-lg flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">WhatsApp / Telepon</h4>
+                                    <p class="text-sm text-slate-600">+62 812-8650-8553</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4">
+                            <a href="https://wa.me/6281286508553" target="_blank" class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg shadow-emerald-600/30 transition-all">
+                                <i class="fa-brands fa-whatsapp text-xl mr-2"></i> Chat WhatsApp Admin (081286508553)
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Map Mock / Image Container -->
+                    <div class="bg-slate-100 border border-slate-200 rounded-3xl overflow-hidden h-96 relative shadow-inner">
+                        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=800&auto=format&fit=crop" alt="Map Location Jati Agung" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-dark/20 flex items-center justify-center">
+                            <div class="bg-white/90 backdrop-blur-md px-6 py-3 rounded-2xl shadow-xl text-center">
+                                <i class="fa-solid fa-map-pin text-primary text-2xl mb-1"></i>
+                                <p class="font-bold text-slate-900 text-sm">CUCI KINCLONG - Jati Agung, Lampung Selatan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-xl bg-primary flex items-center justify-center text-white">
+                        <i class="fa-solid fa-motorcycle text-sm"></i>
+                    </div>
+                    <span class="text-xl font-extrabold text-white">CUCI <span class="text-primary">KINCLONG</span></span>
+                </div>
+                <p class="text-sm text-center">© 2026 CUCI KINCLONG Jati Agung, Lampung Selatan. Seluruh hak cipta dilindungi undang-undang.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-primary transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                    <a href="#" class="hover:text-primary transition-colors"><i class="fa-brands fa-facebook text-lg"></i></a>
+                    <a href="#" class="hover:text-primary transition-colors"><i class="fa-brands fa-tiktok text-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking nav links
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Booking Form Submission Handler (No alert())
+        const bookingForm = document.getElementById('booking-form');
+        const successBox = document.getElementById('success-box');
+        const successMsg = document.getElementById('success-msg');
+
+        bookingForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const motor = document.getElementById('motor').value;
+            const service = document.getElementById('service').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+
+            // Display custom success card message instead of alert()
+            successMsg.innerHTML = `Terima kasih <strong>${name}</strong>! Jadwal cuci untuk motor <strong>${motor}</strong> (${service}) pada tanggal <strong>${date}</strong> pukul <strong>${time}</strong> telah berhasil dipesan untuk cabang <strong>Jati Agung, Lampung Selatan</strong>. Konfirmasi akan dikirim via WhatsApp ke 081286508553.`;
+            
+            successBox.classList.remove('hidden');
+            bookingForm.reset();
+
+            // Scroll down to success box
+            successBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+
+        // Set minimum date for date picker to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('date').setAttribute('min', today);
+    </script>
+</body>
+</html>
